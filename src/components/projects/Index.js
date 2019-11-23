@@ -48,7 +48,7 @@ export const Projects = () => {
                     title={"Zmovie"}
                     desc={"Lista de peliculas consumiendo la API OMDB"}
                     refer={"Ir al repositorio"}
-                /> */}
+                /> */} 
             </Grid>
         </>
     )
