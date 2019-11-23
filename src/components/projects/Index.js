@@ -43,12 +43,12 @@ export const Projects = () => {
                         "es posible tambien hacer solicitues para cambios de paquete."}
                     refer={"Ir al repositorio"}
                 />
-                <Card
+                {/* <Card
                     movie={ZmovieImg}
                     title={"Zmovie"}
                     desc={"Lista de peliculas consumiendo la API OMDB"}
                     refer={"Ir al repositorio"}
-                />
+                /> */}
             </Grid>
         </>
     )
