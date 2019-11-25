@@ -20,7 +20,7 @@ export const About = () => {
             <Panel>
                 <ProfileContent>
                     <ScrollAnimation
-                        animateIn="bounceInLeft"
+                        animateIn="slideInDown"
                         animateOnce={true}>
                         <Content centerImg>
                             <ProfileImg src={ProfilePhoto} alt="profile-photo" />
@@ -28,7 +28,7 @@ export const About = () => {
                     </ScrollAnimation>
                     <Content centerText>
                         <ScrollAnimation
-                            animateIn="bounceInRight"
+                            animateIn="zoomIn"
                             animateOnce={true}
                             initiallyVisible={true}
                         >
@@ -38,7 +38,7 @@ export const About = () => {
                     </Content>
                     <Content contentGrow>
                         <ScrollAnimation
-                            animateIn="bounceInRight"
+                            animateIn="slideInUp"
                             animateOnce={true}
                             initiallyVisible={true}
                         >

@@ -6,6 +6,8 @@ import {
     SelectLang,
     LangOption,
     Anchor,
+    ListLeft,
+    ListRight,
     ListMenu
 } from './styles'
 
@@ -16,7 +18,7 @@ import { configureAnchors, goToTop } from 'react-scrollable-anchor'
 export const Header = () => {
 
     const { t } = useTranslation()
-    configureAnchors({offset: -60, scrollDuration: 400, keepLastAnchorHash: false})
+    configureAnchors({ offset: -60, scrollDuration: 400, keepLastAnchorHash: false })
     goToTop()
 
     const handleChange = (event) => {
@@ -30,16 +32,20 @@ export const Header = () => {
         <>
             <HeaderNav>
                 <ListMenu>
-                    <Option rightAuto>
-                        <SelectLang onChange={handleChange} >
-                            <LangOption value="en">{t('English')}</LangOption>
-                            <LangOption value="es">{t('Spanish')}</LangOption>
-                        </SelectLang>
-                    </Option>
-                    <Option><Anchor href="#About Me">{t('About Me')}</Anchor></Option>
-                    <Option><Anchor href="#Projects">{t('Projects')}</Anchor></Option>
-                    <Option><Anchor href="#Skills">{t('Skills')}</Anchor></Option>
-                    <Option><Anchor href="#Contact">{t('Contact')}</Anchor></Option>
+                    <ListLeft className="">
+                        <Option rightAuto>
+                            <SelectLang onChange={handleChange} >
+                                <LangOption value="en">{t('English')}</LangOption>
+                                <LangOption value="es">{t('Spanish')}</LangOption>
+                            </SelectLang>
+                        </Option>
+                    </ListLeft>
+                    <ListRight>
+                        <Option><Anchor href="#About Me">{t('About Me')}</Anchor></Option>
+                        <Option><Anchor href="#Projects">{t('Projects')}</Anchor></Option>
+                        <Option><Anchor href="#Skills">{t('Skills')}</Anchor></Option>
+                        <Option><Anchor href="#Contact">{t('Contact')}</Anchor></Option>
+                    </ListRight>
                 </ListMenu>
             </HeaderNav>
         </>

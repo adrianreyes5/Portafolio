@@ -4,10 +4,13 @@ export const Grid = styled.div`
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-
-    @media screen and (max-width: 768px) {
+    justify-content: center;
+    @media screen and (min-width: 320px) {
+        grid-template-columns: 450px;
+    } 
+    @media screen and (min-width: 768px) {
         grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     } 
 `
 export const BorderTop = styled.hr`
@@ -29,7 +32,7 @@ export const Card = styled.div`
     justify-self: center;
 
     @media screen and (max-width: 1024px) {
-        width: 450px;
+        width: 420px;
     } 
 `
 export const CardImg = styled.figure`

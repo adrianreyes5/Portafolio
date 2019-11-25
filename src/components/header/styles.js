@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderNav = styled.header`
+    display: grid;
     width: 100%;
     background-color: #393e46;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
@@ -8,19 +9,31 @@ export const HeaderNav = styled.header`
     z-index: 4;
 `
 export const ListMenu = styled.ul`
-    width: 100%;
-    display: inline-flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 100px 1fr;
     padding: 15px;
     right: 0;
-
-    @media screen and (max-width: 425px){
+    @media screen and (min-width: 320px){
         justify-content: center;
     }
+    @media screen and (min-width: 768px){
+        justify-content: space-between;
+    }
+`
+export const ListLeft = styled.div`
+    justify-self: start;
+`
+export const ListRight = styled.div`
+    justify-self: end;
+    display: inline-flex;
 `
 export const Option = styled.li`
-    padding: 0 15px;
-
+    @media screen and (min-width: 320px) {
+        padding: 0 12px;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 15px;
+    }
     margin-right: ${props => props.rightAuto && "auto"};
 `
 export const SelectLang = styled.select`

@@ -7,11 +7,14 @@ export const Panel = styled.div`
 export const ProfileContent = styled.div`
     display: grid;
     justify-content: center;
-    grid-template-columns: 220px 350px;
-    grid-auto-rows: 200px 170px;
-    @media screen and (max-width: 425px) {
-        grid-template-rows: 220px 100px 250px;
-        grid-template-columns: 500px;
+    
+    @media screen and (min-width: 320px) {
+        grid-template-rows: 220px 100px;
+        grid-template-columns: 400px;
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 220px 350px;
+        grid-auto-rows: 200px 170px;
     }
 
     /* grid-template-columns: repeat(2, 1fr); */

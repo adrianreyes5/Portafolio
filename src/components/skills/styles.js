@@ -34,7 +34,7 @@ export const SkillContent = styled.article`
 
     @media screen and (max-width: 425px) {
         grid-column: span 3;
-        padding: 15px 0;
+        padding: 15px 5px;
     }
 `
 
