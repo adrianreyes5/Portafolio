@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Footer = styled.footer`
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-color: #222831;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ export const InconAnchor = styled.a`
     color: #ffff;
 `
 export const Div = styled.div`
-    padding: 5px 0;
+    padding: 10px 0;
     width: 100%;
     display: flex;
     justify-content: center;

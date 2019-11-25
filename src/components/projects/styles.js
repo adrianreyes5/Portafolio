@@ -27,7 +27,6 @@ export const Title = styled.h1`
     text-align: center;
 `
 export const Card = styled.div`
-    width: 502px;
     margin: 20px 0;
     height: fit-content;
     border-radius: 5px;
@@ -37,6 +36,10 @@ export const Card = styled.div`
 
     @media screen and (min-width: 320px) {
         width: 380px;
+        justify-self: center;
+    } 
+    @media screen and (min-width: 768px) {
+        width: 502px;
         justify-self: center;
     } 
 `
