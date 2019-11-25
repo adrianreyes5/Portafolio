@@ -10,6 +10,10 @@ export const Grid = styled.div`
     } 
     @media screen and (min-width: 768px) {
         grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    @media screen and (min-width: 1024px) {
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
     } 
 `
