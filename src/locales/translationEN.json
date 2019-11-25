@@ -1,0 +1,28 @@
+{
+    "Spanish": "Spanish",
+    "English":  "English",
+
+    "About Me": "About Me",
+    "Projects": "Projects",
+    "Skills": "Skills",
+    "Contact": "Contact",
+     
+    "Web Developer": "Web Developer",
+    "Summary": "I am a student of Computer engineering. Enthusiast of the tecnologies Javascript, Node.js, React.js, PHP, Laravel, etc. I want to start sharing my knowledge throught this website.",
+    
+    "Look at the projects I'm working on": "Look at the projects I'm working on",
+
+    "Zmovie Description": "Practicing React.js consuming the OMDB public API to check movies and series of the moment. You can also see the description of each article using React Router.",
+
+    "Lunch Day Title": "Lunches Day",
+    "Lunch Day Desc": "Project based on creating multiple random food recipes by consulting ingredients in a store (BBDD). If any ingredient is missing, the recipe is on hold (Laravel Queues) until the ingredient is available in a virtual store (public API).",
+
+    "Cable Unet Title": "Cable Unet",
+    "Cable Unet Desc": "University project that tries to simulate a web system to manage packages of services that contain internet, cable or telephony. The creation of each package is dynamic, as well as the plans for each service. An invoice is generated for each user who subscribes a package and it is also possible to make requests for package changes.",
+
+    "Go to repository": "Go to repository",
+
+    "About the website": "I built the site you are currently viewing using React.js, styled components for css, i18n and Heroku deploy. It is designed to show my design and skills as a developer.",
+    
+    "Contact me": "Contact me if you have a job to offer or ask me something!"
+}

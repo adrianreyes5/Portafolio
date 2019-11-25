@@ -7,29 +7,41 @@ import CSS from '../../assets/skills/css.png'
 import ReactJS from '../../assets/skills/react.png'
 import JS from '../../assets/skills/js.png'
 import Bootstrap from '../../assets/skills/bootstrap.png'
-import { Container, BorderTop, Title, GridRow, SkillContent } from './styles'
+import {
+    Container,
+    BorderTop,
+    Title,
+    GridRow,
+    SkillContent
+} from './styles'
+
+import { useTranslation } from "react-i18next";
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { ImageSkill } from '../utilities/ImageSkill'
 
 export const Skills = () => {
+    const { t } = useTranslation()
     return (
         <>
-            <BorderTop></BorderTop>
+            <ScrollableAnchor id={'Skills'}>
+                <BorderTop></BorderTop>
+            </ScrollableAnchor>
             <Container>
                 <Title>
-                    <h1>Skills</h1>
+                    <h1>{t('Skills')}</h1>
                 </Title>
                 <GridRow>
-                    <ImageSkill path={Node} />
-                    <ImageSkill path={JS} />
-                    <ImageSkill path={ReactJS} />
-                    <ImageSkill path={CSS} />
-                    <ImageSkill path={Laravel} />
-                    <ImageSkill path={PHP} />
-                    <ImageSkill path={Bootstrap} />
-                    <ImageSkill path={Git} />
+                    <ImageSkill path={Node} skillText={"Node.js"}  refer={"https://nodejs.org/"} />
+                    <ImageSkill path={JS} skillText={"Javascript"} refer={"https://www.javascript.com/"} />
+                    <ImageSkill path={ReactJS} skillText={"React.js"} refer={"https://es.reactjs.org/"} />
+                    <ImageSkill path={CSS} skillText={"CSS3"} refer={"https://developer.mozilla.org/es/docs/Web/CSS"} />
+                    <ImageSkill path={Laravel} skillText={"Laravel"} refer={"https://laravel.com/"} />
+                    <ImageSkill path={PHP} skillText={"PHP"} refer={"https://www.php.net/manual/es/intro-whatis.php"} />
+                    <ImageSkill path={Bootstrap} skillText={"Bootstrap 4"} refer={"https://getbootstrap.com/"} />
+                    <ImageSkill path={Git} skillText={"GitHub"} refer={"https://github.com/"} />
                     <SkillContent>
-                        {'Construi el sitio que actualmente estas viendo usando React.js, styled components para css, i18n y Heroku deploy. Esta diseñado para mostrar mi diseño y habilidades como desarrollador. '}
+                        {t('About the website')}
                     </SkillContent>
                 </GridRow>
             </Container >

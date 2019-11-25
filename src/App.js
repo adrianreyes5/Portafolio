@@ -6,12 +6,12 @@ import { CenterPanel } from './components/centerPanel/Index'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyle />
       <Header />
       <CenterPanel />
-    </div>
-  );
+    </>
+  )
 }
 
 export default App;

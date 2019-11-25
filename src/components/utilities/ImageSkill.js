@@ -1,10 +1,11 @@
 import React from 'react'
-import { ZoomIcon } from '../skills/styles'
+import { ZoomIcon, SkillText } from '../skills/styles'
 
-export const ImageSkill = ({ path }) => {
+export const ImageSkill = ({ path, skillText, refer }) => {
     return (
-        <ZoomIcon>
+        <ZoomIcon href={refer}>
             <img src={path} alt="img" width={80} height={76} />
+            <SkillText>{skillText}</SkillText>
         </ZoomIcon>
     )
 }

@@ -36,7 +36,7 @@ export const Title = styled.h2`
     color: ${props => props.name ?
         "#2D3748"
         :
-        "#2F855A"
+        "#29a19c"
     };
     font-size: 30px;
 `

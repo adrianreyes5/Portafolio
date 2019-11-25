@@ -1,11 +1,20 @@
 import React from 'react'
-import { Card, CardImg, Img, CardFooter, TitleFooter, DescFooter, Button, Anchor } from '../projects/styles'
+import {
+    Card,
+    CardImg,
+    Img,
+    CardFooter,
+    TitleFooter,
+    DescFooter,
+    Button,
+    Anchor
+} from '../projects/styles'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
 export const ProjectCards = (props) => {
 
-    const { movie, title, desc, refer } = props
+    const { projectImg, title, desc, refer } = props
 
     return (
         <Card>
@@ -14,7 +23,7 @@ export const ProjectCards = (props) => {
                 animateOnce={true}
             >
                 <CardImg>
-                    <Img src={movie} alt="img" />
+                    <Img src={projectImg} alt="img" />
                 </CardImg>
                 <CardFooter>
                     <TitleFooter>

@@ -14,13 +14,13 @@ export const Title = styled.div`
 export const GridRow = styled.div`
     padding-top: 30px;
     display: grid;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 130px);
     grid-template-columns: repeat(4, 200px);
     justify-content: center;
     justify-items: center;
 
     @media screen and (max-width: 425px) {
-        grid-template-rows: repeat(4, 100px);
+        grid-template-rows: repeat(4, 130px);
         grid-template-columns: repeat(3, 150px);
     }
 `
@@ -37,10 +37,20 @@ export const SkillContent = styled.article`
         padding: 15px 0;
     }
 `
-export const ZoomIcon = styled.div`
-    transition: transform .2s;
 
+export const ZoomIcon = styled.a`
+    transition: transform .2s;
+    text-decoration: none;
+    cursor: pointer;
     :hover {
         transform: scale(1.5);
     }
+   
 `
+export const SkillText = styled.p`
+    text-align: center;
+    padding: 7px 5px;
+    font-weight: 500;
+    color: #727272;
+`
+

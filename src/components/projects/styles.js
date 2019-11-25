@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Grid = styled.div`
     display: grid;
@@ -68,7 +68,7 @@ export const Anchor = styled.a`
     padding: 6px 12px;
     border-radius: 5px;
     border: 1px solid transparent;
-    background-color: #28a745;
+    background-color: #29a19c;
     text-decoration: none;
     color: #fff;
     font-weight: 400;

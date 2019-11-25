@@ -1,0 +1,28 @@
+{
+    "Spanish": "Español",
+    "English":  "Ingles",
+
+    "About Me": "Acerca de mi",
+    "Projects": "Proyectos",
+    "Skills": "Habilidades",
+    "Contact": "Contacto",
+
+    "Web Developer": "Desarrollador Web",
+    "Summary": "Soy estudiante de ingenieria informática. Entusiasta de las tecnologías Javascript, Node.js, PHP, Laravel, etc. Quiero empezar a compartir mis conocimientos a través de esta web.",
+
+    "Look at the projects I'm working on": "Observa los proyectos en los que estoy trabajando",
+
+    "Zmovie Description": "Practicando React.js consumiendo la API pública de OMDB para consultar peliculas y series del momento. Tambien se puede observar la descripción de cada articulo utilizando React Router.",
+
+    "Lunch Day Title": "Jornada de Almuerzos",
+    "Lunch Day Desc": "Proyecto basado en crear multíples recetas de comida aleatorias consultando los ingredientes en una bodega (BBDD). Si falta algun ingrediente, la receta queda en espera (Laravel Queues) hasta ver disponibilidad del ingrediente en una tienda virtual (API pública).",
+
+    "Cable Unet Title": "Cable Unet",
+    "Cable Unet Desc": "Proyecto universitario que trata de simular un sistema web para administrar paquetes de de servicios que contienen internet, cable o telefonía. La creación de cada paquete es dinamica, tambiencomo los planes para cada servicio. Se genera una factura para cada usuario que suscriba un paquete y es posible tambien hacer solicitues para cambios de paquete.",
+
+    "Go to repository": "Ir al respositorio",
+
+    "About the website": "Construi el sitio que actualmente estas viendo usando React.js, styled components para css, i18n y Heroku deploy. Esta diseñado para mostrar mi diseño y habilidades como desarrollador.",
+    
+    "Contact me": "Contactame si tienes un trabajo para ofrecerme o preguntarme algo!"
+}

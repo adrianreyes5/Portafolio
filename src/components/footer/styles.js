@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Footer = styled.footer`
     width: 100%;
     height: 30vh;
-    background-color: #343A40;
+    background-color: #222831;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +16,10 @@ export const IconContainer = styled.ul`
 `
 export const IconsList = styled.li`
     padding: 0 15px;
-    color: #fff;
+`
+export const InconAnchor = styled.a`
+    text-decoration: none;
+    color: #ffff;
 `
 export const Div = styled.div`
     padding: 10px 0;
