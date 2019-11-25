@@ -29,7 +29,7 @@ export const ListRight = styled.div`
 `
 export const Option = styled.li`
     @media screen and (min-width: 320px) {
-        padding: 0 12px;
+        padding: ${props => props.rightAuto ? '0' : '0 12px' };
     }
     @media screen and (min-width: 768px) {
         padding: 0 15px;
