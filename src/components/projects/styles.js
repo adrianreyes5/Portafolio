@@ -6,7 +6,7 @@ export const Grid = styled.div`
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     @media screen and (min-width: 320px) {
-        grid-template-columns: 450px;
+        grid-template-columns: 400px;
     } 
     @media screen and (min-width: 768px) {
         grid-template-rows: repeat(2, 1fr);
@@ -35,8 +35,9 @@ export const Card = styled.div`
     border: 1px solid #fff;
     justify-self: center;
 
-    @media screen and (max-width: 1024px) {
-        width: 420px;
+    @media screen and (min-width: 320px) {
+        width: 380px;
+        justify-self: center;
     } 
 `
 export const CardImg = styled.figure`
@@ -51,7 +52,7 @@ export const CardFooter = styled.div`
     padding: 10px 0px 10px 15px;
     display: grid;
     align-items: center;
-    grid-template-rows: 40px 120px 50px;
+    grid-template-rows: 40px 140px 50px;
 `
 export const TitleFooter = styled.div`
     padding: 5px 0;

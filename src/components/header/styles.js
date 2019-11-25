@@ -10,14 +10,15 @@ export const HeaderNav = styled.header`
 `
 export const ListMenu = styled.ul`
     display: grid;
-    grid-template-columns: 100px 1fr;
     padding: 15px;
     right: 0;
     @media screen and (min-width: 320px){
         justify-content: center;
+        grid-template-columns: 80px 1fr;
     }
     @media screen and (min-width: 768px){
         justify-content: space-between;
+        grid-template-columns: 100px 1fr;
     }
 `
 export const ListLeft = styled.div`
@@ -29,7 +30,7 @@ export const ListRight = styled.div`
 `
 export const Option = styled.li`
     @media screen and (min-width: 320px) {
-        padding: ${props => props.rightAuto ? '0' : '0 12px' };
+        padding: ${props => props.rightAuto ? '0' : '0 8px' };
     }
     @media screen and (min-width: 768px) {
         padding: 0 15px;
@@ -41,9 +42,14 @@ export const SelectLang = styled.select`
     color: #fff;
     border: none;
     cursor: pointer;
-    font-weight: 600;
     :hover {
         color: #d6d6d6;
+    }
+    @media screen and (min-width: 320px){
+        font-weight: 400;
+    }
+    @media screen and (min-width: 768px){
+        font-weight: 600;
     }
 `
 export const LangOption = styled.option`
@@ -55,8 +61,14 @@ export const Anchor = styled.a`
     text-decoration: none;
     color: #fff;
     cursor: pointer;
-    font-weight: 600;
+    
     :hover {
         color: #d6d6d6;
+    }
+    @media screen and (min-width: 320px){
+        font-weight: 400;
+    }
+    @media screen and (min-width: 768px){
+        font-weight: 600;
     }
 `

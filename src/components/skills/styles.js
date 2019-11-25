@@ -21,7 +21,7 @@ export const GridRow = styled.div`
 
     @media screen and (max-width: 425px) {
         grid-template-rows: repeat(4, 130px);
-        grid-template-columns: repeat(3, 150px);
+        grid-template-columns: repeat(3, 130px);
     }
 `
 export const SkillContent = styled.article`

@@ -23,6 +23,7 @@ export const Content = styled.div`
     align-self: center;
     text-align: center;
     grid-column: ${props => props.contentGrow && "span 2"};
+    padding: ${props => props.contentGrow && "0 10px"};
     font-size: 20px;
     color: #2D3748;
 
