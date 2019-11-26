@@ -19,9 +19,17 @@ export const GridRow = styled.div`
     justify-content: center;
     justify-items: center;
 
-    @media screen and (max-width: 425px) {
-        grid-template-rows: repeat(4, 130px);
-        grid-template-columns: repeat(3, 130px);
+    @media screen and (min-width: 375px) {
+        grid-template-rows: repeat(5,130px);
+        grid-template-columns: repeat(2,150px);
+    }
+    @media screen and (min-width: 576px) {
+        grid-template-rows: repeat(3,130px);
+        grid-template-columns: repeat(4,150px);
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-rows: repeat(3, 130px);
+        grid-template-columns: repeat(4, 180px);
     }
 `
 export const SkillContent = styled.article`
@@ -31,10 +39,9 @@ export const SkillContent = styled.article`
     align-self: center;
     font-weight: 500;
     color: #727272;
-
+    padding: 15px 5px;
     @media screen and (max-width: 425px) {
-        grid-column: span 3;
-        padding: 15px 5px;
+        grid-column: span 2;
     }
 `
 

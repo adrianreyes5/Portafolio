@@ -5,8 +5,11 @@ export const Grid = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    @media screen and (min-width: 320px) {
-        grid-template-columns: 400px;
+    @media screen and (min-width: 375px) {
+        grid-template-columns: 420px;
+    } 
+    @media screen and (min-width: 576px) {
+        grid-template-columns: 480px;
     } 
     @media screen and (min-width: 768px) {
         grid-template-rows: repeat(2, 1fr);
@@ -34,14 +37,26 @@ export const Card = styled.div`
     border: 1px solid #fff;
     justify-self: center;
 
-    @media screen and (min-width: 320px) {
-        width: 380px;
+    @media screen and (min-width: 375px) {
+        width: 400px;
+        justify-self: center;
+    } 
+    @media screen and (min-width: 576px) {
+        width: 460px;
         justify-self: center;
     } 
     @media screen and (min-width: 768px) {
         width: 502px;
         justify-self: center;
     } 
+    @media screen and (min-width: 1024px) {
+        width: 470px;
+        justify-self: center;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 600px;
+        justify-self: center;
+    }
 `
 export const CardImg = styled.figure`
     margin: 0;
