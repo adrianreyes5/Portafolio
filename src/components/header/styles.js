@@ -4,7 +4,7 @@ export const HeaderNav = styled.header`
     display: grid;
     width: 100%;
     background-color: #393e46;
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
     position: fixed;
     z-index: 4;
 `
@@ -14,7 +14,11 @@ export const ListMenu = styled.ul`
     right: 0;
     @media screen and (min-width: 320px){
         justify-content: center;
-        grid-template-columns: 80px 1fr;
+        grid-template-columns: auto;
+    }
+    @media screen and (min-width: 375px){
+        justify-content: center;
+        grid-template-columns: 50px 1fr;
     }
     @media screen and (min-width: 768px){
         justify-content: space-between;
@@ -23,13 +27,17 @@ export const ListMenu = styled.ul`
 `
 export const ListLeft = styled.div`
     justify-self: start;
+
+    @media screen and (max-width: 320px ) {
+        display: none;
+    }
 `
 export const ListRight = styled.div`
     justify-self: end;
     display: inline-flex;
 `
 export const Option = styled.li`
-    @media screen and (min-width: 320px) {
+    @media screen and (min-width: 375px) {
         padding: ${props => props.rightAuto ? '0' : '0 8px' };
     }
     @media screen and (min-width: 768px) {
@@ -65,8 +73,9 @@ export const Anchor = styled.a`
     :hover {
         color: #d6d6d6;
     }
-    @media screen and (min-width: 320px){
+    @media screen and (max-width: 320px){
         font-weight: 400;
+        padding: 8px;
     }
     @media screen and (min-width: 768px){
         font-weight: 600;

@@ -19,6 +19,10 @@ export const GridRow = styled.div`
     justify-content: center;
     justify-items: center;
 
+    @media screen and (min-width: 320px) {
+        grid-template-rows: repeat(5,130px);
+        grid-template-columns: repeat(2,150px);
+    }
     @media screen and (min-width: 375px) {
         grid-template-rows: repeat(5,130px);
         grid-template-columns: repeat(2,150px);

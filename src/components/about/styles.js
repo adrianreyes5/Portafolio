@@ -10,7 +10,12 @@ export const Panel = styled.div`
 export const ProfileContent = styled.div`
     display: grid;
     justify-content: center;
-    
+
+    @media screen and (min-width: 320px) {
+        grid-template-rows: 220px 100px 150px;
+        grid-template-columns: 300px;
+        align-items: center;
+    }
     @media screen and (min-width: 375px) {
         grid-template-rows: 220px 100px 150px;
         grid-template-columns: 350px;
@@ -34,8 +39,10 @@ export const Content = styled.div`
     padding: ${props => props.contentGrow && "0 10px"};
     font-size: 20px;
     color: #2D3748;
-    @media screen and (min-width: 375px) {
+    @media screen and (min-width: 320px) {
         grid-column: ${props => props.contentGrow && "span 1"};
+        padding: ${props => props.contentGrow && "0 15px"};
+        font-size: ${props => props.contentGrow && "16px"};
     }
     @media screen and (min-width: 576px) {
         grid-column: ${props => props.contentGrow && "span 2"};

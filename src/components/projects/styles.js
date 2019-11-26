@@ -5,8 +5,12 @@ export const Grid = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    @media screen and (min-width: 320px) {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(1, 290px);
+    } 
     @media screen and (min-width: 375px) {
-        grid-template-columns: 420px;
+        grid-template-columns: 360px;
     } 
     @media screen and (min-width: 576px) {
         grid-template-columns: 480px;
@@ -28,6 +32,12 @@ export const BorderTop = styled.hr`
 export const Title = styled.h1`
     padding: 25px;
     text-align: center;
+
+    @media screen and (max-width: 425px) {
+        padding: 10px;
+        font-size: 1.5em;
+        text-align: center;
+    }
 `
 export const Card = styled.div`
     margin: 20px 0;
@@ -38,7 +48,7 @@ export const Card = styled.div`
     justify-self: center;
 
     @media screen and (min-width: 375px) {
-        width: 400px;
+        width: 350px;
         justify-self: center;
     } 
     @media screen and (min-width: 576px) {
@@ -71,6 +81,10 @@ export const CardFooter = styled.div`
     display: grid;
     align-items: center;
     grid-template-rows: 40px 140px 50px;
+
+    @media screen and (max-width: 375px) {
+        grid-template-rows: 40px auto 50px;
+    }
 `
 export const TitleFooter = styled.div`
     padding: 5px 0;
