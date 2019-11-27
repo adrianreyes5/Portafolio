@@ -35,13 +35,13 @@ export const Header = () => {
                     <ListLeft className="">
                         <Option rightAuto>
                             <SelectLang onChange={handleChange} >
-                                <LangOption value="en">{t('English')}</LangOption>
-                                <LangOption value="es">{t('Spanish')}</LangOption>
+                                <LangOption value="en">{t('En')}</LangOption>
+                                <LangOption value="es">{t('ES')}</LangOption>
                             </SelectLang>
                         </Option>
                     </ListLeft>
                     <ListRight>
-                        <Option><Anchor href="#About Me">{t('About Me')}</Anchor></Option>
+                        <Option><Anchor href="#About Me">{t('About')}</Anchor></Option>
                         <Option><Anchor href="#Projects">{t('Projects')}</Anchor></Option>
                         <Option><Anchor href="#Skills">{t('Skills')}</Anchor></Option>
                         <Option><Anchor href="#Contact">{t('Contact')}</Anchor></Option>
