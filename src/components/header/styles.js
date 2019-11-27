@@ -77,8 +77,9 @@ export const Anchor = styled.a`
     }
     @media screen and (max-width: 375px){
         font-weight: 400;
-        padding: 7px
+        padding: 5px
     }
+
     @media screen and (min-width: 768px){
         font-weight: 600;
     }
