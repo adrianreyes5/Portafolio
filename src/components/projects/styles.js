@@ -80,7 +80,7 @@ export const CardFooter = styled.div`
     padding: 10px 0px 10px 15px;
     display: grid;
     align-items: center;
-    grid-template-rows: 40px 140px 50px;
+    grid-template-rows: 40px auto 50px;
 
     @media screen and (max-width: 375px) {
         grid-template-rows: 40px auto 50px;
@@ -100,8 +100,17 @@ export const DescFooter = styled.div`
         color: #727272;
     }
 `
+export const DecButtons = styled.div`
+    display: flex;
+    align-items: center;
+`
+export const ImgSkillInline = styled.div`
+    margin-left: auto;
+    padding: 35px 8px 0px 0;
+`
 export const Button = styled.div`
-    padding: 15px 0 10px;
+    padding: 15px 15px 10px 0;
+    display: inline-block;
 `
 export const Anchor = styled.a`
     text-align: center;
@@ -114,8 +123,8 @@ export const Anchor = styled.a`
     font-weight: 400;
     :hover {
         color: #fff;
-        background-color: #218838;
-        border-color: #1e7e34;
+        background-color: #217c78;
+        border-color: #378e8a;
     }
 `
 

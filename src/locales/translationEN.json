@@ -20,7 +20,11 @@
     "Cable Unet Title": "Cable Unet",
     "Cable Unet Desc": "University project that tries to simulate a web system to manage packages of services that contain internet, cable or telephony. The creation of each package is dynamic, as well as the plans for each service. An invoice is generated for each user who subscribes a package and it is also possible to make requests for package changes.",
 
+    "Crud Title": "React crud with Firestore",
+    "Crud Desc": "Simple crud made with the firebase database (Firestore) that is responsible for creating, displaying, editing and deleting a user.",
+
     "Go to repository": "Go to repository",
+    "Go to page": "See project",
 
     "About the website": "I built the site you are currently viewing using React.js, styled components for css, i18n and Heroku deploy. It is designed to show my design and skills as a developer.",
     

@@ -7,14 +7,24 @@ import {
     TitleFooter,
     DescFooter,
     Button,
-    Anchor
+    Anchor,
+    ImgSkillInline,
+    DecButtons
 } from '../projects/styles'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
 export const ProjectCards = (props) => {
 
-    const { projectImg, title, desc, refer } = props
+    const { projectImg,
+        title,
+        desc,
+        refer,
+        web,
+        linkWeb,
+        target,
+        skill,
+        linkSkill } = props
 
     return (
         <Card>
@@ -32,9 +42,21 @@ export const ProjectCards = (props) => {
                     <DescFooter>
                         <small>{desc}</small>
                     </DescFooter>
-                    <Button>
-                        <Anchor href="">{refer}</Anchor>
-                    </Button>
+                    <DecButtons>
+                        <Button>
+                            <Anchor href="">{refer}</Anchor>
+                        </Button>
+                        {web && (
+                            <Button>
+                                <Anchor href={linkWeb} target={target}>{web}</Anchor>
+                            </Button>
+                        )}
+                        <ImgSkillInline>
+                            <a href={linkSkill} target="_blank">
+                                <img src={skill} width={25} height={25} alt="" />
+                            </a>
+                        </ImgSkillInline>
+                    </DecButtons>
                 </CardFooter>
             </ScrollAnimation>
         </Card>
