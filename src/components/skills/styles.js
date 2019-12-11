@@ -24,6 +24,10 @@ export const GridRow = styled.div`
         grid-template-columns: repeat(2,150px);
     }
     @media screen and (min-width: 375px) {
+        grid-template-rows: repeat(5,130px);
+        grid-template-columns: repeat(2,150px);
+    }
+    @media screen and (min-width: 500px) {
         grid-template-rows: repeat(3,130px);
         grid-template-columns: repeat(4,auto);
     }
@@ -45,9 +49,6 @@ export const SkillContent = styled.article`
     color: #727272;
     padding: 15px 5px;
     @media screen and (max-width: 425px) {
-        grid-column: span 4;
-    }
-    @media screen and (max-width: 320px) {
         grid-column: span 2;
     }
 `
