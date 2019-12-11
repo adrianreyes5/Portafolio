@@ -76,8 +76,7 @@ export const Img = styled.img`
     width: 100%;
 `
 export const CardFooter = styled.div`
-    padding: 10px 0px 10px 15px;
-    padding: 10px 0px 10px 15px;
+    padding: 10px 7px 10px 7px;
     display: grid;
     align-items: center;
     grid-template-rows: 40px auto 50px;
@@ -110,17 +109,23 @@ export const DecButtons = styled.div`
     @media screen and (max-width: 320px) {
         flex-direction: column;
     }
+    @media screen and (max-width: 375px) {
+        justify-content: space-around;
+    }
 `
 export const ImgSkillInline = styled.div`
     margin-left: auto;
     padding: 35px 8px 0px 0;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 375px) {
         display: none;
     }
 `
 export const Button = styled.div`
     padding: 0px 5px 0px 0px;
+    @media screen and (max-width: 375px) {
+        padding: 6px;
+    }
     @media screen and (max-width: 320px) {
         padding: 15px;
     }
