@@ -47,8 +47,8 @@ export const ProjectCards = (props) => {
                             <Anchor href="">{refer}</Anchor>
                         </Button>
                         {web && (
-                            <Button>
-                                <Anchor href={linkWeb} target={target}>{web}</Anchor>
+                            <Button buttonWeb>
+                                <Anchor anchorWeb href={linkWeb} target={target}>{web}</Anchor>
                             </Button>
                         )}
                         <ImgSkillInline>

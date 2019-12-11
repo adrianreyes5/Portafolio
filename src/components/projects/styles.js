@@ -83,7 +83,10 @@ export const CardFooter = styled.div`
     grid-template-rows: 40px auto 50px;
 
     @media screen and (max-width: 375px) {
-        grid-template-rows: 40px auto 50px;
+        grid-template-rows: 40px auto 70px;
+    }
+    @media screen and (max-width: 320px) {
+        grid-template-rows: 40px auto 140px;
     }
 `
 export const TitleFooter = styled.div`
@@ -103,14 +106,24 @@ export const DescFooter = styled.div`
 export const DecButtons = styled.div`
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 320px) {
+        flex-direction: column;
+    }
 `
 export const ImgSkillInline = styled.div`
     margin-left: auto;
     padding: 35px 8px 0px 0;
+
+    @media screen and (max-width: 320px) {
+        display: none;
+    }
 `
 export const Button = styled.div`
-    padding: 15px 15px 10px 0;
-    display: inline-block;
+    padding: 0px 5px 0px 0px;
+    @media screen and (max-width: 320px) {
+        padding: 15px;
+    }
 `
 export const Anchor = styled.a`
     text-align: center;
@@ -125,6 +138,10 @@ export const Anchor = styled.a`
         color: #fff;
         background-color: #217c78;
         border-color: #378e8a;
+    }
+    @media screen and (max-width: 320px) {
+        padding: 9px 60px;
+        padding: ${props => props.anchorWeb && '9px 77px'};
     }
 `
 
