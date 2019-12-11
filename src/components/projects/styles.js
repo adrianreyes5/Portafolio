@@ -82,7 +82,7 @@ export const CardFooter = styled.div`
     grid-template-rows: 40px auto 50px;
 
     @media screen and (max-width: 375px) {
-        grid-template-rows: 40px auto 70px;
+        grid-template-rows: 40px auto 140px;
     }
     @media screen and (max-width: 320px) {
         grid-template-rows: 40px auto 140px;
@@ -110,7 +110,7 @@ export const DecButtons = styled.div`
         flex-direction: column;
     }
     @media screen and (max-width: 375px) {
-        justify-content: space-around;
+        flex-direction: column;
     }
 `
 export const ImgSkillInline = styled.div`
@@ -124,7 +124,7 @@ export const ImgSkillInline = styled.div`
 export const Button = styled.div`
     padding: 0px 5px 0px 0px;
     @media screen and (max-width: 375px) {
-        padding: 6px;
+        padding: 15px;
     }
     @media screen and (max-width: 320px) {
         padding: 15px;
@@ -147,6 +147,10 @@ export const Anchor = styled.a`
     @media screen and (max-width: 320px) {
         padding: 9px 60px;
         padding: ${props => props.anchorWeb && '9px 77px'};
+    }
+    @media screen and (max-width: 375px) {
+        padding: 9px 63px;
+        padding: ${props => props.anchorWeb && '9px 80px'};
     }
 `
 
